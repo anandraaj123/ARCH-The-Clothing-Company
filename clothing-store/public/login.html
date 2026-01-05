@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | ARCH</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+
+  <div class="auth-container">
+
+    <!-- Brand -->
+    <h1 class="brand">ARCH</h1>
+    <p class="tagline">Minimal T-Shirts</p>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="auth-form">
+      <h2>Login</h2>
+
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+
+      <button type="submit">Login</button>
+
+      <p class="switch-text">
+        New here?
+        <span onclick="showSignup()">Create account</span>
+      </p>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signupForm" class="auth-form hidden">
+      <h2>Sign Up</h2>
+
+      <input type="email" id="signupEmail" placeholder="Email" required />
+      <input type="password" id="signupPassword" placeholder="Password" required />
+
+      <button type="submit">Create Account</button>
+
+      <p class="switch-text">
+        Already have an account?
+        <span onclick="showLogin()">Login</span>
+      </p>
+    </form>
+
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="js/auth.js"></script>
+
+  <!-- Toggle Script -->
+  <script>
+    function showSignup() {
+      document.getElementById("loginForm").classList.add("hidden");
+      document.getElementById("signupForm").classList.remove("hidden");
+    }
+
+    function showLogin() {
+      document.getElementById("signupForm").classList.add("hidden");
+      document.getElementById("loginForm").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>

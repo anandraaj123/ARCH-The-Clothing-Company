@@ -1,0 +1,80 @@
+/* ===== CART ===== */
+
+.cart-section h1 {
+  margin-bottom: 25px;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-item h4 {
+  font-size: 0.95rem;
+}
+
+.cart-item span {
+  font-size: 0.9rem;
+}
+
+/* ===== SUMMARY ===== */
+
+.cart-summary h2 {
+  font-size: 1.2rem;
+}
+
+/* ===== ADDRESS ===== */
+
+.address-form {
+  margin-top: 20px;
+}
+
+.address-form input,
+.address-form textarea {
+  margin-bottom: 14px;
+}
+
+/* ===== CHECKOUT ===== */
+
+.checkout-section h1 {
+  margin-bottom: 20px;
+}
+
+.order-summary {
+  background: #f7f7f7;
+}
+
+/* ===== BUTTONS ===== */
+
+.checkout-btn,
+.pay-btn,
+.address-form button {
+  transition: opacity 0.2s ease;
+}
+
+.checkout-btn:hover,
+.pay-btn:hover,
+.address-form button:hover {
+  opacity: 0.85;
+}
+
+/* ===== SUCCESS ===== */
+
+.success-section {
+  padding-top: 100px;
+}
+
+.success-section h1 {
+  font-size: 1.8rem;
+}
+
+.redirect-text {
+  font-size: 0.9rem;
+}

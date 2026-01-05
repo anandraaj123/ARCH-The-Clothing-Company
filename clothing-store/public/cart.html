@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | ARCH</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/checkout.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">ARCH</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- ===== CART SECTION ===== -->
+  <section class="cart-section">
+    <h1>Your Cart</h1>
+
+    <!-- Cart Items -->
+    <div id="cartItems" class="cart-items">
+      <!-- Items injected by cart.js -->
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <h2>Total: ₹<span id="totalAmount">0</span></h2>
+
+      <button class="checkout-btn" onclick="goToAddress()">
+        Proceed to Checkout
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== JS ===== -->
+  <script src="js/cart.js"></script>
+
+<script>
+  function goToAddress() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cart.length === 0) {
+      alert("Your cart is empty 🛒");
+      return;
+    }
+
+    // SAFE redirect
+    window.location.href = "./address.html";
+  }
+</script>
+
+
+
+</body>
+</html>

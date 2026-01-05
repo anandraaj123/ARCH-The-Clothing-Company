@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery Address | ARCH</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/checkout.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">ARCH</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <!-- ===== ADDRESS SECTION ===== -->
+  <section class="address-section">
+    <h1>Delivery Address</h1>
+
+    <form id="addressForm" class="address-form">
+
+      <input type="text" id="name" placeholder="Full Name" required />
+
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+
+      <textarea id="address" placeholder="Full Address" rows="4" required></textarea>
+
+      <input type="text" id="city" placeholder="City" required />
+
+      <input type="text" id="pincode" placeholder="Pincode" required />
+
+      <button type="submit">
+        Save & Continue to Payment
+      </button>
+
+    </form>
+  </section>
+
+  <!-- ===== JS ===== -->
+  <script type="module" src="js/address.js"></script>
+
+
+</body>
+</html>

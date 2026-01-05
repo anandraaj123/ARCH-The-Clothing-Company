@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | ARCH</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/checkout.css" />
+
+  <!-- Razorpay Checkout Script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">ARCH</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <!-- ===== CHECKOUT SECTION ===== -->
+  <section class="checkout-section">
+    <h1>Confirm & Pay</h1>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <p>Total Amount: ₹<span id="payAmount">0</span></p>
+    </div>
+
+    <!-- Pay Button -->
+    <button id="payNowBtn" class="pay-btn">
+      Pay Now
+    </button>
+
+  </section>
+
+  <!-- ===== JS ===== -->
+  <script type="module" src="js/checkout.js"></script>
+
+
+</body>
+</html>

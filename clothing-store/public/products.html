@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | ARCH</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/product.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">ARCH</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart 🛒</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="page-title">
+    <h1>Our T-Shirts</h1>
+    <p>Minimal • Premium • Limited Stock</p>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="assets/images/black-tshirt.jpg" alt="Black T-Shirt">
+
+      <h3>ARCH Black T-Shirt</h3>
+      <p class="price">₹599</p>
+
+      <select class="size-select">
+        <option value="">Select Size</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+
+      <button onclick="addToCart(this, 'ARCH Black T-Shirt', 599)">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="assets/images/white-tshirt.jpg" alt="White T-Shirt">
+
+      <h3>ARCH White T-Shirt</h3>
+      <p class="price">₹599</p>
+
+      <select class="size-select">
+        <option value="">Select Size</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+
+      <button onclick="addToCart(this, 'ARCH White T-Shirt', 599)">
+        Add to Cart
+      </button>
+    </div>
+
+  </section>
+
+  <!-- ===== JS ===== -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+
+</body>
+</html>

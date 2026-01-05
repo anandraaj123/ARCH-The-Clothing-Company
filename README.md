@@ -47,7 +47,7 @@ Our-Clothing-Web/
 
 Clone the repository
 
-git clone https://github.com/your-username/our-clothing-web.git
+git clone - https://arch-clothing.web.app/
 
 
 Open the folder
